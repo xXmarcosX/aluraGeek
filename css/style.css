@@ -72,20 +72,89 @@ body {
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     border: 4px solid black;
 }
 
-.main__produtos__card__act{
-    display: flex;
-    font-size: 14px;
-    justify-content: space-around;
+.main__produtos__cards__card span{
+    margin-top: 15%;
 }
 
-#btn-excluir{
+.main__produtos__card__img{
+    width: 80%;
+    height: 30vh;
+}
+
+.main__produtos__card__img img{
+    width: 100%;
+    border: 2px solid black;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+.main__produtos__card__act{
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 6vh;   
+    margin-top: 5%;
+}
+
+.main__produtos__card__act button{
+    margin-top: 15%;
+}
+
+.btn-excluir{
     cursor: pointer;
     border: none;
     background-color: var(--roxo-padrao);
+}
+
+.main__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main__form__input{
+    border: 3px solid var(--roxo-padrao);
+    height: 8vh;
+    border-radius: 30px;
+    padding-left: 3%;
+    font-family: "Press Start 2P", system-ui;
+    color: var(--roxo-padrao);
+}
+
+.main__form__input::placeholder{
+    color: var(--roxo-padrao);
+}
+
+.main__form__btns{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.main__form__btns__btn{
+    background-color: var(--roxo-padrao);
+    font-family: "Press Start 2P", system-ui;
+    padding: 20px;
+    color: var(--text-padrao);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reset{
+    background-color: var(--text-padrao);
+    color: var(--roxo-padrao);
+    border: 3px solid var(--roxo-padrao);
 }
 
 .footer{
