@@ -19,90 +19,23 @@
         
         <div class="main__produtos">
             <h1>Meus Produtos</h1>
-            <div class="main__produtos__cards">
-            
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            <div class="main__produtos__cards__card">
-                <div class="main__produtos__card__img">
-                    <img src="image/stormtrooper.svg" alt="">
-                </div>
-                <span>Stormtrooper</span>
-                <div class="main__produtos__card__act">
-                    <span>$ 60.00</span>
-                    <button id="btn-excluir"> <img src="image/lixo.svg" alt=""></button>
-                </div>
-            </div>
-
-            
-        </div>
+            <div class="main__produtos__cards" data-card></div>
 
         </div>
 
-        <form action="" class="main__form">
+        <form action="" class="main__form" data-form>
             <h2>Adicionar Produto:</h2>
-            <input type="text" placeholder="nome..." data-nome>
+            <input type="text" class="main__form__input" placeholder="nome..." data-nome required>
             <span class="mensagem-erro"></span>
-            <input type="text" placeholder="valor..." data-valor>
+            <input type="text" class="main__form__input" placeholder="valor..." data-valor required>
             <span class="mensagem-erro"></span>
-            <input type="text" placeholder="imagem..." data-imagem>
+            <input type="text" class="main__form__input" placeholder="imagem..." data-imagem required>
             <span class="mensagem-erro"></span>
 
-            <input type="submit" value="Guardar">
-            <input type="reset" value="Limpar">
+            <div class="main__form__btns">
+                <input type="submit" value="Guardar" id="btn-submit" class="main__form__btns__btn">
+                <input type="reset" value="Limpar" id="btn-reset" class="main__form__btns__btn reset">
+            </div>
         </form>
     </section>
 
@@ -114,6 +47,8 @@
         <p>Densenvolvido por Marcos Vinicius da Silva</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/mostrarProdutos.js" type="module"></script>
+    <script type="module" src="js/criaProduto.js"></script>
+    <script type="module" src="js/removeCard.js"></script>
 </body>
 </html>
