@@ -1,1 +1,4 @@
-npx json-server --watch db.json para iniciar o db do projeto
+para iniciar o db do projeto:
+
+npx json-server --watch db.json 
+
