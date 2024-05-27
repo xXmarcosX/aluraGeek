@@ -1,0 +1,10 @@
+{
+  "produtos": [
+    {
+      "id": "39fd",
+      "nome": "Athena",
+      "valor": "299",
+      "imagem": "https://m.media-amazon.com/images/I/71pYRu9+cdL._AC_UL480_FMwebp_QL65_.jpg"
+    }
+  ]
+}
