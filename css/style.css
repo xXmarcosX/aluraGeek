@@ -170,3 +170,50 @@ body {
     margin-top: 10%;
     box-shadow: 0 -10px 10px -5px black; 
 }
+
+@media (max-width: 768px){
+    .header__logo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .main__produtos{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .main__produtos__cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-right: 4.5%;
+    }
+
+    .main__produtos__cards__card{
+        width: 85%;
+    }
+
+    .main__form{
+        display: flex;
+        text-align: center;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
